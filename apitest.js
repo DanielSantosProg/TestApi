@@ -66,7 +66,7 @@ async function criarCobrança(accessToken, txid, payloadCobranca) {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${accessToken}` // Incluindo o token
+                'Authorization': `Bearer ${accessToken}` // Incluindo o token de acesso
             },
             body: JSON.stringify(payloadCobranca)
         });
